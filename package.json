@@ -1,0 +1,30 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass public/assets/sass/main.scss public/assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderjbeal/burger.git"
+  },
+  "keywords": [],
+  "author": "Eric Bays",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderjbeal/burger/issues"
+  },
+  "homepage": "https://github.com/alexanderjbeal/burger#readme",
+  "engines": {
+    "node": "10.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "node-sass": "^4.9.3"
+  }
+}

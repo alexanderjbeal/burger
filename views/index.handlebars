@@ -1,0 +1,22 @@
+<div class="section">
+    <h2 class="section__title">available.</h2>
+    <ul>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{> burgers/uneaten-block devoured=0}}
+            {{/unless}}
+        {{/each}}
+    </ul>
+</div>
+
+<div class="section">
+    <h2 class="section__title">eaten.</h2>
+    <ul>
+        {{#each burgers}}
+            {{#if devoured}}
+                {{> burgers/eaten-block devoured=1}}
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>
+
